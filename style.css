@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+  
+body{
+    width: 500px;
+    margin: 4% auto;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+}
+
+
+
+.calculator{
+    padding: 20px;
+}
+
+
+.input{
+    margin-top: 25%;
+    border-radius: 1px;
+    height: 60px;
+    padding-right: 15px;
+    padding-top: 10px;
+    text-align: right;
+    margin-right: 6px;
+    font-size: 3rem;
+    overflow-x: auto;
+    transition: all .2s ease-in-out;
+} 
+
+.buttons {}
+
+.operators {}
+
+
+
+.operators div {
+    display:inline-block;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 70px;
+    padding: 10px;
+    margin: 40px 1px 10px 0px;
+    cursor: pointer;
+    
+}
+
+
+.leftPanel {
+    display: inline-block;
+}
+
+
+.numbers div{
+    display:inline-block;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 70px;
+    padding: 10px;
+    margin: 10px 1px 10px 0px;
+    cursor: pointer;
+    
+}
+
+
+
+
+
+
+div.equal {
+    color: white;
+    display: inline-block;
+    border-radius: 2.5rem;
+    line-height: 50px;
+    text-align: center;
+    padding: 62px 10px 62px 10px;
+    vertical-align: top;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    font-weight: bold;
+}
+
+
+.rightPanel{
+    display: flex;
+    margin-left: 10px;
+}
+
+.container2{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+.n1{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.light-mode{
+    background-color: white;
+    .input{
+        color: black;
+    }
+    .calculator{
+        background-color: white;
+    }
+
+    .ac{
+        border: 2px solid #bbb;
+        background-color: #ddd;
+    }
+    .op{
+
+        border: 2px solid #bbb;
+        background-color: #ddd;
+    }
+    .nm{
+        color: black;
+        border: 2px solid #ddd;
+        background-color: #f9f9f9;
+    }
+    div.equal {
+        color: white;
+        border: 1px solid #3079ED;
+        background-color: #4d90fe;
+    }
+
+}
+
+.dark-mode{
+    background-color: black;
+    .input{
+        color: white;
+    }
+    .calculator{
+        background-color: black;
+    }
+    .ac{
+        background-color: 2px solid darkorange;
+        background-color: darkorange;
+    }
+    .op{
+        border: 2px solid #a19e9e;
+        background-color: #a19e9e;
+    }
+    .nm{
+        color: whitesmoke;
+        border: 2px solid black;
+        background-color: rgb(48, 48, 48);
+    }
+    div.equal {
+        border: 1px solid #3079ED;
+        background-color: #4d90fe;
+    }
+
+}
+
+@media (min-width:801px) {
+    
+    body{
+        width: 330px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .calculator{
+        padding: 20px;
+        box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.4);
+    }
+    .input{
+        margin-top: 10%;
+        height: 60px;
+        font-size: 3rem;
+    } 
+    .operators div {
+        width: 35px;
+        height: 35px;
+        line-height: 40px;
+        font-size: 1.5rem;
+    }
+    .numbers div{
+        width: 35px;
+        height: 35px;
+        line-height: 40px;
+        font-size: 1.5rem;
+    }
+    div.equal {
+        line-height: 60px;
+        padding: 48px 10px 48px 10px;
+        margin-top: 15px;
+    }
+}
+@media (min-width:501px)and (max-width:800px){
+    body{
+        width: 330px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .calculator{
+        padding: 20px;
+        box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.4);
+    }
+    .input{
+        margin-top: 10%;
+        height: 60px;
+        font-size: 3rem;
+    } 
+    .operators div {
+        width: 35px;
+        height: 35px;
+        line-height: 40px;
+        font-size: 1.5rem;
+    }
+    .numbers div{
+        width: 35px;
+        height: 35px;
+        line-height: 40px;
+        font-size: 1.5rem;
+    }
+    div.equal {
+        line-height: 60px;
+        padding: 48px 10px 48px 10px;
+        margin-top: 15px;
+    }
+
+}
+
+@media (min-width:400px)and (max-width:500px) {
+    
+    body{
+        overflow-y: hidden;
+        width: 420px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .calculator{
+        padding: 20px;
+        box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.4);
+    }
+    .input{
+        margin-top: 10%;
+        height: 60px;
+        font-size: 3rem;
+    } 
+    .operators div {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 2rem;
+    }
+    .numbers div{
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 2rem;
+    }
+    div.equal {
+        line-height: 60px;
+        padding: 58px 10px 58px 10px;
+        margin-top: 15px;
+    }
+}
+
+@media (min-width:321px)and (max-width:399px){
+    body{
+        overflow-y: hidden;
+        width: 380px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .calculator{
+        padding: 20px;
+        box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.4);
+    }
+    .input{
+        margin-top: 2%;
+        height: 60px;
+        font-size: 3rem;
+    } 
+    .operators div {
+        width: 48px;
+        height: 48px;
+        line-height: 50px;
+        font-size: 2rem;
+    }
+    .numbers div{
+        width: 48px;
+        height: 48px;
+        line-height: 50px;
+        font-size: 2rem;
+    }
+    div.equal {
+        line-height: 60px;
+        padding: 50px 10px 50px 10px;
+        margin-top: 15px;
+    }
+
+}
+
+@media (min-width:200px)and (max-width:320px){
+    body{
+        overflow-y: hidden;
+        width: 300px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .calculator{
+        padding: 10px;
+        box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.4);
+    }
+    .input{
+        margin-top: 2%;
+        height: 40px;
+        font-size: 3rem;
+    } 
+    .operators div {
+        width: 28px;
+        height: 28px;
+        line-height: 30px;
+        font-size: 1rem;
+        margin: 5px 1px 10px 0px;
+    }
+    .numbers div{
+        width: 28px;
+        height: 28px;
+        line-height: 30px;
+        font-size: 1rem;
+        margin: 5px 1px 10px 0px;
+    }
+    div.equal {
+        line-height: 40px;
+        padding: 45px 10px 45px 10px;
+        margin-top: 25px;
+    }
+
+}
+
